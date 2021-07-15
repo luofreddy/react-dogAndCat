@@ -9,3 +9,14 @@
 .text-main-color{
   color:#DDD8D1 ;
 }
+.fixed{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  transition: 1s;
+  
+}
+.App{
+  margin-top: 140px;
+}
