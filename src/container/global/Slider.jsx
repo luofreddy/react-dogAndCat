@@ -1,26 +1,31 @@
-/** @jsxImportSource @emotion/react */
-import styled from '@emotion/styled'
-import { MAIN_AD } from './contants';
 
-const SliderBox = styled.div`
-  max-width: 100vw;
-  position: absolute;
-  
-  
-  & img{
-    width: 100%;
-    vertical-align:middle;
-  }
-  
-`
-const Slider = () => {
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
+
+SwiperCore.use([Navigation, Pagination, Autoplay]);
+
+const AdSlider = ({carouselImage}) => {
   return (
-    <SliderBox>
-      <div>
-        <img src={MAIN_AD[0].img} alt="" />
-      </div>      
-    </SliderBox>
+    
+    <Swiper
+    navigation={true}
+    pagination={true}
+    autoplay={{
+      "delay": 20000,
+      "disableOnInteraction": false
+    }}
+    loop={true}
+  >
+    {
+      carouselImage.map(item=>{
+        return <SwiperSlide key={item.url}><a href={item.url}><img style={{width:100+"%"}} src={item.img} alt="" /></a></SwiperSlide>
+      })
+    }
+  </Swiper>
+    
   );
 };
 
-export default Slider;
+export default AdSlider;
+
