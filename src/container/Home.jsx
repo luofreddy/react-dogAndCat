@@ -22,22 +22,6 @@ const FourIcons = styled.div`
   }
   }  
 `
-
-const FourIcons = styled.div`
-  padding: .5rem;
-  display : flex;
-  & a{
-    padding: 0 .6rem;
-    overflow: hidden;
-    
-    & img{
-    width: 100%;
-    :hover{
-      transform: scale(1.1);
-    }
-  }
-  }  
-`
 const Home = () => {
   return (
     <div>
