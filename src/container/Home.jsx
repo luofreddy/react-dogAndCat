@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import styled from '@emotion/styled'
+
 import { css,jsx } from '@emotion/react';
 import AdSlider from "./global/Slider";
 import  * as contants  from './global/contants';
@@ -22,9 +23,25 @@ const FourIcons = styled.div`
   }  
 `
 
+const FourIcons = styled.div`
+  padding: .5rem;
+  display : flex;
+  & a{
+    padding: 0 .6rem;
+    overflow: hidden;
+    
+    & img{
+    width: 100%;
+    :hover{
+      transform: scale(1.1);
+    }
+  }
+  }  
+`
 const Home = () => {
   return (
     <div>
+
       <AdSlider carouselImage={contants.MAIN_AD}></AdSlider>
       <FourIcons>
         {
@@ -46,6 +63,7 @@ const Home = () => {
       <img src="https://dogcatstar.atomcdn.com/2020/07/03/955206/title_popular-1.png" alt="" />
       </div>
       
+
     </div>
   );
 };

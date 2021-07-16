@@ -1,3 +1,4 @@
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
@@ -27,3 +28,4 @@ const AdSlider = ({carouselImage}) => {
 };
 
 export default AdSlider;
+

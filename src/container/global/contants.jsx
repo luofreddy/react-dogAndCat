@@ -1,11 +1,13 @@
 export const LOGO_MOBILE='https://dogcatstar.atomcdn.com/2020/07/03/menu_logo.png'
 
 export const MAIN_AD = [{
+
   id:1,
   url :'https://bit.ly/3qeMQ45',
   img : 'https://dogcatstar.atomcdn.com/2020/07/03/955206/meowmeowboss_SM.png'
   },
   {
+
     id:2,
     url :'https://www.dogcatstar.com/product/granularcatlitter/',
     img : 'https://dogcatstar.atomcdn.com/2020/07/03/955206/broken-tofu_SM02-1.png'
@@ -16,6 +18,7 @@ export const MAIN_AD = [{
     img : 'https://dogcatstar.atomcdn.com/2020/07/03/955206/laundry_SM02.png'
   },
   {
+
     id:4,
     url :'https://www.dogcatstar.com/product/dog-freshfood-new/',
     img : 'https://dogcatstar.atomcdn.com/2020/07/03/955206/dogfreshfood_old2_SM01.png'
@@ -70,6 +73,7 @@ export const Menulist = [{
   id :'store',
   img:'https://dogcatstar.atomcdn.com/2020/07/03/menu_store-1.png'
 },
+
 ]
 
 export const HOME_CENTER_3TIPS =[{
