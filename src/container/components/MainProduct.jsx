@@ -10,6 +10,7 @@ const AllMainProduct =styled.div`
   }
 `
 const Product = styled.div`
+
   max-width: 45%;
   margin: 1.5rem 0;
   overflow-x: hidden;  
@@ -37,7 +38,7 @@ const Product = styled.div`
       opacity: 1;
     }
   }
-  
+
 `
 const MainProduct = ({mainproduct}) => {
   return (
@@ -46,6 +47,7 @@ const MainProduct = ({mainproduct}) => {
       {
         MAIN_PRODUCT.map(item=>{
           return <Product>
+
             <div className='picture'>
               <img className='baseImg' src={item.baseImg} alt="" />
               <img className='hoverImg' src={item.hoverImg} alt="" />
@@ -59,6 +61,7 @@ const MainProduct = ({mainproduct}) => {
               <a href="/"><button>選擇規格</button></a>
             </div>
             
+
         </Product>
       
         })
