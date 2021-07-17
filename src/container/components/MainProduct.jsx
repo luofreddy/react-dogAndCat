@@ -10,34 +10,34 @@ const AllMainProduct =styled.div`
   }
 `
 const Product = styled.div`
-  position: relative;
   max-width: 45%;
   margin: 1.5rem 0;
   overflow-x: hidden;  
-  & .hoverImg{
-    opacity: 0;
+  border: 1px solid #ddd;
+  & .picture{
+    position: relative;
     width: 100%;
+    overflow: hidden;
+    
+    & .hoverImg{
+    opacity: 0;
+    width: auto;
+    height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
-    
+    left:0;
+    transform :translateX(-20%) ;
+    }   
   }
-  
   :hover{
-    box-shadow: 1px 1px 2px 1px #000;
     & .baseImg{
-      position: absolute;
-      top: 0;
-      left: 0;
       opacity: 0;
     }
     & .hoverImg{
       opacity: 1;
     }
   }
-  & a{
-    text-decoration: none;
-  }
+  
 `
 const MainProduct = ({mainproduct}) => {
   return (
@@ -46,17 +46,19 @@ const MainProduct = ({mainproduct}) => {
       {
         MAIN_PRODUCT.map(item=>{
           return <Product>
-            <a href={item.url}>
-            <img className='baseImg' src={item.baseImg} alt="" />
-            <img className='hoverImg' src={item.hoverImg} alt="" />
-            </a>    
-
-            <a href={item.url}><h3>{item.discription}</h3></a>
-            <h4>
-              <span>NT$</span>{item.price.lowest}
-              <span>-NT$</span>{item.price.highest}
-            </h4>
-            <a href="/"><button>選擇規格</button></a>
+            <div className='picture'>
+              <img className='baseImg' src={item.baseImg} alt="" />
+              <img className='hoverImg' src={item.hoverImg} alt="" />
+            </div>
+            <div className='text'>
+              <a href={item.url}><h3>{item.discription}</h3></a>
+              <h4>
+                <span>NT$</span>{item.price.lowest}
+                <span>-NT$</span>{item.price.highest}
+              </h4>
+              <a href="/"><button>選擇規格</button></a>
+            </div>
+            
         </Product>
       
         })
