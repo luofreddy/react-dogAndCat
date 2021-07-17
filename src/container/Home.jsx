@@ -1,10 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import styled from '@emotion/styled'
-
-import { css,jsx } from '@emotion/react';
 import AdSlider from "./global/Slider";
 import  * as contants  from './global/contants';
-import { auto } from 'async';
+import MainProduct from './components/MainProduct';
 
 
 const FourIcons = styled.div`
@@ -22,11 +20,16 @@ const FourIcons = styled.div`
   }
   }  
 `
+const HomeCategory=styled.div`
+  margin: auto;
+  width: 40%;
+  padding: 0.3rem 0;
+`
 const Home = () => {
   return (
     <div>
 
-      <AdSlider carouselImage={contants.MAIN_AD}></AdSlider>
+      {/* <AdSlider carouselImage={contants.MAIN_AD}></AdSlider>
       <FourIcons>
         {
           contants.fourIcon.map(item=>{
@@ -39,15 +42,11 @@ const Home = () => {
       
       <AdSlider carouselImage={contants.HOME_CENTER_3TIPS}></AdSlider>
       
-      <div css={css`
-        margin: auto;
-        width: 40%;
-        padding: 0.3rem 0;
-      `}> 
+      <HomeCategory > 
       <img src="https://dogcatstar.atomcdn.com/2020/07/03/955206/title_popular-1.png" alt="" />
-      </div>
-      
-
+      </HomeCategory>
+       */}
+      <MainProduct mainproduct={contants.MAIN_PRODUCT}></MainProduct>
     </div>
   );
 };

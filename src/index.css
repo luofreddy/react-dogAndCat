@@ -4,6 +4,7 @@
 }
 img{
   width: 100%;
+  vertical-align: middle;
 }
 .bg-main-color{
   background-color: #543B17;

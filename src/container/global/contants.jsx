@@ -89,3 +89,61 @@ export const HOME_CENTER_3TIPS =[{
   img:'https://dogcatstar.atomcdn.com/2020/07/05/1078468/btnB_03_4.png'
 }
 ]
+
+export const MAIN_PRODUCT = [
+{
+  baseImg : 'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-P2.jpg',
+  hoverImg:'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-01P.jpg',
+  url:'https://www.dogcatstar.com/product/cathpprawfood/',
+  discription:'汪喵沙西米 | 貓咪生食餐',
+  price:{
+    lowest:60,
+    highest: 1080
+  },
+  isDiscount:false,
+},
+{
+  baseImg : 'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-P2.jpg',
+  hoverImg:'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-01P.jpg',
+  url:'https://www.dogcatstar.com/product/cathpprawfood/',
+  discription:'汪喵沙西米 | 貓咪生食餐',
+  price:{
+    lowest:60,
+    highest: 1080
+  },
+  isDiscount:false,
+},
+{
+  baseImg : 'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-P2.jpg',
+  hoverImg:'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-01P.jpg',
+  url:'https://www.dogcatstar.com/product/cathpprawfood/',
+  discription:'汪喵沙西米 | 貓咪生食餐',
+  price:{
+    lowest:60,
+    highest: 1080
+  },
+  isDiscount:true,
+},
+{
+  baseImg : 'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-P2.jpg',
+  hoverImg:'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-01P.jpg',
+  url:'https://www.dogcatstar.com/product/cathpprawfood/',
+  discription:'汪喵沙西米 | 貓咪生食餐',
+  price:{
+    lowest:60,
+    highest: 1080
+  },
+  isDiscount:true,
+},
+{
+  baseImg : 'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-P2.jpg',
+  hoverImg:'https://dogcatstar.atomcdn.com/2015/12/10/7211/cathpprawfood-01P.jpg',
+  url:'https://www.dogcatstar.com/product/cathpprawfood/',
+  discription:'汪喵沙西米 | 貓咪生食餐',
+  price:{
+    lowest:60,
+    highest: 1080
+  },
+  isDiscount:false,
+},
+]

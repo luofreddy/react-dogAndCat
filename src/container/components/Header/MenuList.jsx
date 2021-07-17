@@ -31,6 +31,7 @@ const MenuMain = styled.div`
       }
     }
     & img{
+      width: 15%;
       display: block;
       margin: .3rem auto;      
     }
