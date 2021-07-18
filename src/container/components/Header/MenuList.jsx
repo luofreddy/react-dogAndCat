@@ -7,9 +7,9 @@ const MenuMain = styled.div`
   background-color: #d6d6d6ae;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
-  
+  overflow-y: scroll; 
   position: absolute;
+  z-index: 10;
   top: 0;
   & button{
     border: none;

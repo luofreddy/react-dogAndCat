@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { MAIN_PRODUCT } from '../global/contants';
 const AllMainProduct =styled.div`  
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -10,15 +10,35 @@ const AllMainProduct =styled.div`
   }
 `
 const Product = styled.div`
+  position: relative;
   max-width: 45%;
-  margin: 1.5rem 0;
-  overflow-x: hidden;  
+  margin: 1.5rem 0;   
   border: 1px solid #ddd;
+  & .text{
+    padding: .5rem 1rem;
+    & a{
+      display: block;
+      margin-bottom:.3rem;
+      text-decoration: none;
+      color:#000
+    }
+    & button{
+      color: #fff;
+      margin-top: .5rem;
+      padding: .2rem .5rem;
+      font-weight: bold;
+      border: none;
+      background-color: #6C5C53;
+      :hover{
+        cursor: pointer;
+        background-color: #5e5047;
+      }
+    }
+  }
   & .picture{
     position: relative;
     width: 100%;
-    overflow: hidden;
-    
+    overflow: hidden;    
     & .hoverImg{
     opacity: 0;
     width: auto;
@@ -27,24 +47,47 @@ const Product = styled.div`
     top: 0;
     left:0;
     transform :translateX(-20%) ;
-    }   
+    }       
   }
   :hover{
-    & .baseImg{
-      opacity: 0;
+    box-shadow: 1px 2px 3px #aaa;
+    & .picture{
+      cursor: pointer;
+      & .baseImg{
+        opacity: 0;
+      }
+      & .hoverImg{
+        opacity: 1;
+      }  
     }
-    & .hoverImg{
-      opacity: 1;
-    }
+    
   }
+`
+const Discount = styled.div`
+  content: "特價";
+  text-align: center;
+  display: block;
+  line-height: 3rem;
+  background-color: #CA7658;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  top: 1.3rem;
+  left: -1rem;
   
 `
+
+
 const MainProduct = ({mainproduct}) => {
   return (
     
     <AllMainProduct>
       {
-        MAIN_PRODUCT.map(item=>{
+        mainproduct.map(item=>{
           return <Product>
             <div className='picture'>
               <img className='baseImg' src={item.baseImg} alt="" />
@@ -58,7 +101,7 @@ const MainProduct = ({mainproduct}) => {
               </h4>
               <a href="/"><button>選擇規格</button></a>
             </div>
-            
+            <Discount style={{display: item.isDiscount? 'block':'none'}}>特價</Discount>
         </Product>
       
         })
