@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div>
 
-      {/* <AdSlider carouselImage={contants.MAIN_AD}></AdSlider>
+      <AdSlider carouselImage={contants.MAIN_AD}></AdSlider>
       <FourIcons>
         {
           contants.fourIcon.map(item=>{
@@ -45,7 +45,7 @@ const Home = () => {
       <HomeCategory > 
       <img src="https://dogcatstar.atomcdn.com/2020/07/03/955206/title_popular-1.png" alt="" />
       </HomeCategory>
-       */}
+
       <MainProduct mainproduct={contants.MAIN_PRODUCT}></MainProduct>
     </div>
   );
