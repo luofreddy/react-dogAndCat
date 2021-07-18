@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
+
 const AllMainProduct =styled.div`  
   
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -81,12 +83,12 @@ const Discount = styled.div`
   
 `
 
-
 const MainProduct = ({mainproduct}) => {
   return (
     
     <AllMainProduct>
       {
+
         mainproduct.map(item=>{
           return <Product>
             <div className='picture'>
