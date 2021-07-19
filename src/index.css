@@ -12,14 +12,49 @@ img{
 .text-main-color{
   color:#DDD8D1 ;
 }
-.fixed{
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  width: 100%;
-  transition: 1s;
+.swiper-button-prev,
+.swiper-button-next{  
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1.5px solid #ddd;
+  transition: .3s .2s;
+  opacity:0;
+  background-color: #543B17;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+  font-size: 1rem;
+  color: #ddd;
+}
+.swiper-button-prev{
+  transform: translateX(1rem);
+}
+.swiper-button-next{
+  transform: translateX(-1rem);
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next{
+  opacity: 1;
+  transform: translateX(0);
   
 }
-.App{
-  margin-top: 140px;
+.swiper-button-prev:hover,
+.swiper-button-next:hover{  
+  background-color: #7a5d34;
+  border: 1.5px solid #7a5d34;
+}
+
+.swiper-pagination-bullet{
+  background-color: transparent;
+  border: 3px solid #ddd;
+}
+
+.swiper-pagination-bullet:hover{
+  opacity: .5;
+}
+.swiper-pagination-bullet-active{
+  opacity: 1;
+  background-color: #fff;
+  border-color: #fff;
 }

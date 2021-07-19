@@ -22,10 +22,10 @@ const HeaderMain=styled.div`
   background-color: #fff;
 `
 
-const Header = () => {
+const Header = ({topDistanceOver150}) => {
   const [menuShow,setMenuShow] = useState(false)
   return (
-    <div className='fixed'>
+    <div>
       <Title className='bg-main-color text-main-color'>汪喵洗衣酵素，寶寶毛孩吸被被也不怕！</Title>
       <HeaderMain>
         <Menu menuShow={menuShow} setMenuShow={setMenuShow}></Menu>
