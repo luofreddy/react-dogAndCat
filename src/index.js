@@ -1,14 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import Header from './container/Header'
+import './index.css';
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Header></Header>
-    <App />
+  <React.StrictMode >
+    
+    <App  />
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

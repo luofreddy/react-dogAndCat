@@ -1,8 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import styled from '@emotion/styled'
-import AdSlider from "./global/Slider";
+import AdSlider from './global/Slider'
 import  * as contants  from './global/contants';
 import MainProduct from './components/MainProduct';
+import { useEffect } from 'react';
 
 
 const FourIcons = styled.div`

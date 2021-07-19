@@ -10,7 +10,7 @@ const AdSlider = ({carouselImage}) => {
     
     <Swiper
     navigation={true}
-    pagination={true}
+    pagination={{"clickable": true}}
     autoplay={{
       "delay": 20000,
       "disableOnInteraction": false
