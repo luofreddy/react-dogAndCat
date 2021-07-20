@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom';
 import { LOGO_MOBILE } from './global/contants';
 import Btn from './components/Header/Btn';
 import Menu from './components/Header/Menu';
@@ -31,7 +32,8 @@ const Header = ({topDistanceOver150}) => {
         <Menu menuShow={menuShow} setMenuShow={setMenuShow}></Menu>
         <h1><a href="/"><img src={LOGO_MOBILE} alt="" /></a></h1>
         <div style = {{marginRight:0.5+'rem'}}>
-          <Btn Icon={RiAccountCircleFill}></Btn>
+          <Link to ={'/login'}><Btn Icon={RiAccountCircleFill}></Btn></Link>
+          
           <Btn Icon={FaShoppingCart}></Btn>
         </div>
       </HeaderMain>

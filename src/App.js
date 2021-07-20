@@ -1,9 +1,11 @@
 import styled from '@emotion/styled';
 import Header from './container/Header';
 import Home from './container/Home';
+import Login from './container/Login';
 import Fotter from './container/Fotter'
 import {AiOutlineUp} from 'react-icons/ai'
 import { useEffect,useRef } from 'react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 const GoToTop=styled.div`
   position: fixed;
   width: 2rem;
@@ -47,10 +49,18 @@ function App() {
   }
   return (
     <div className="App">
-      <Header topDistanceOver150={topDistanceOver150}></Header>
-      <Home></Home>
-      <Fotter></Fotter> 
-      <GoToTop onClick={gototop}><AiOutlineUp /></GoToTop>  
+      <Router basename={process.env.PUBLIC_URL}>
+        <Header topDistanceOver150={topDistanceOver150}></Header>
+        <Switch> 
+          <Route path="/" exact component={Home} />
+          <Route path="/login" component={Login} />
+          <Route>404 Not Found!</Route>
+        </Switch>
+        <Fotter></Fotter>
+        <GoToTop onClick={gototop}><AiOutlineUp /></GoToTop>  
+      </Router>
+      
+      
     </div>
   );
 }
