@@ -30,7 +30,7 @@ const Header = ({topDistanceOver150}) => {
       <Title className='bg-main-color text-main-color'>汪喵洗衣酵素，寶寶毛孩吸被被也不怕！</Title>
       <HeaderMain>
         <Menu menuShow={menuShow} setMenuShow={setMenuShow}></Menu>
-        <h1><a href="/"><img src={LOGO_MOBILE} alt="" /></a></h1>
+        <Link to={'/'}><h1><img src={LOGO_MOBILE} alt="" /></h1></Link>
         <div style = {{marginRight:0.5+'rem'}}>
           <Link to ={'/login'}><Btn Icon={RiAccountCircleFill}></Btn></Link>
           
