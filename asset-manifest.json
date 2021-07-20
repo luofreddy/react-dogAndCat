@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-dogAndCat/static/css/main.2151fc10.chunk.css",
+    "main.js": "/react-dogAndCat/static/js/main.0f11883d.chunk.js",
+    "main.js.map": "/react-dogAndCat/static/js/main.0f11883d.chunk.js.map",
+    "runtime-main.js": "/react-dogAndCat/static/js/runtime-main.7098bc67.js",
+    "runtime-main.js.map": "/react-dogAndCat/static/js/runtime-main.7098bc67.js.map",
+    "static/css/2.fbec1269.chunk.css": "/react-dogAndCat/static/css/2.fbec1269.chunk.css",
+    "static/js/2.8e209f1d.chunk.js": "/react-dogAndCat/static/js/2.8e209f1d.chunk.js",
+    "static/js/2.8e209f1d.chunk.js.map": "/react-dogAndCat/static/js/2.8e209f1d.chunk.js.map",
+    "index.html": "/react-dogAndCat/index.html",
+    "static/css/2.fbec1269.chunk.css.map": "/react-dogAndCat/static/css/2.fbec1269.chunk.css.map",
+    "static/css/main.2151fc10.chunk.css.map": "/react-dogAndCat/static/css/main.2151fc10.chunk.css.map",
+    "static/js/2.8e209f1d.chunk.js.LICENSE.txt": "/react-dogAndCat/static/js/2.8e209f1d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7098bc67.js",
+    "static/css/2.fbec1269.chunk.css",
+    "static/js/2.8e209f1d.chunk.js",
+    "static/css/main.2151fc10.chunk.css",
+    "static/js/main.0f11883d.chunk.js"
+  ]
+}
