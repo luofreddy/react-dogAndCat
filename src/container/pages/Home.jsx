@@ -1,35 +1,14 @@
-/** @jsxImportSource @emotion/react */
-import styled from '@emotion/styled'
-import AdSlider from './global/Slider'
-import  * as contants  from './global/contants';
-import MainProduct from './components/MainProduct';
-import { useEffect } from 'react';
+import AdSlider from '../global/Slider'
+import  * as contants  from '../global/contants';
+import MainProduct from '../components/Home/MainProduct';
+import { FourIcons,HomeCategory } from '../UI';
 
 
-const FourIcons = styled.div`
-  padding: .5rem;
-  display : flex;
-  & a{
-    padding: 0 .6rem;
-    overflow: hidden;
-    
-    & img{
-    width: 100%;
-    :hover{
-      transform: scale(1.1);
-    }
-  }
-  }  
-`
-const HomeCategory=styled.div`
-  margin: auto;
-  width: 40%;
-  padding: 0.3rem 0;
-`
-const Home = () => {
+
+
+const Home = ({isMenuJump}) => {
   return (
-    <div>
-
+    <div style={{position: isMenuJump?'fixed':'static'}}>
       <AdSlider carouselImage={contants.MAIN_AD}></AdSlider>
       <FourIcons>
         {

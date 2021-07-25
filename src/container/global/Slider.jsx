@@ -6,8 +6,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const AdSlider = ({carouselImage}) => {
-  return (
-    
+  return (    
     <Swiper
     navigation={true}
     pagination={{"clickable": true}}
