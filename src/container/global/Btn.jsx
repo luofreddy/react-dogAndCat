@@ -1,12 +1,10 @@
 import { IconBlock } from "../UI";
 
-const Btn = ({Icon}) => {
+const Btn = ({ Icon }) => {
   return (
-  <IconBlock>
-    <Icon/>
-  </IconBlock>
-    
-    
+    <IconBlock>
+      <Icon />
+    </IconBlock>
   );
 };
 
