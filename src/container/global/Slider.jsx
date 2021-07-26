@@ -1,4 +1,4 @@
-
+import { css,jsx } from '@emotion/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper'
@@ -18,7 +18,7 @@ const AdSlider = ({carouselImage}) => {
   >
     {
       carouselImage.map(item=>{
-        return <SwiperSlide key={item.url}><a href={item.url}><img style={{width:100+"%"}} src={item.img} alt="" /></a></SwiperSlide>
+        return <SwiperSlide key={item.url}><a href={item.url}><img  style={{width:100+"%"}} src={item.img} alt="" /></a></SwiperSlide>
       })
     }
   </Swiper>

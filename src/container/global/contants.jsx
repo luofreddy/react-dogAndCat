@@ -147,3 +147,62 @@ export const MAIN_PRODUCT = [
   isDiscount:false,
 },
 ]
+
+export const  AD_3 = [{
+  id:1,
+  url :'https://www.dogcatstar.com/product/fantasticcat/',
+  img : 'https://dogcatstar.atomcdn.com/2020/07/03/955206/phone_SliderC_02.jpg'
+  },
+  {
+    id:2,
+    url :'https://www.dogcatstar.com/product/fantasticdog/',
+    img : 'https://dogcatstar.atomcdn.com/2020/07/03/955206/phone_SliderC_03.jpg'
+    },
+    {
+      id:3,
+      url :'https://www.dogcatstar.com/product/cathpprawfood/',
+      img : 'https://dogcatstar.atomcdn.com/2020/07/03/955206/SliderB_01-1.png'
+      },]
+
+export const share = [{
+  img:'https://dogcatstar.atomcdn.com/2020/07/03/1077797/recommend4.jpeg',
+  petName:'扭扭',
+  product:'挑嘴貓無膠主食罐',
+  share:'自從在寵物展買過汪喵挑嘴罐後，扭扭一試成主顧，終於！終結了媽媽找不到適合又安心的罐罐噩夢！'
+},
+{
+  img:'https://dogcatstar.atomcdn.com/2020/07/03/1077797/recommend3.jpeg',
+  petName:'來福',
+  product:'95% 鮮肉無膠主食罐',
+  share:'來福食量大很難全濕食，但又怕營養不夠，所以偶爾會在來福的飼料裡面拌汪喵罐罐，營養均衡，長得更帥了！'
+},
+{
+  img:'https://dogcatstar.atomcdn.com/2020/07/03/1077797/recommend1.jpeg',
+  petName:'麻糬',
+  product:'冷凍乾燥生食餐',
+  share:'為了讓麻糬轉吃生食而先選擇凍乾，結果嗜口性超好，不攝取澱粉飼料後，麻糬體態變得精實、大便比較不臭也不再容易軟便！'
+},
+{
+  img:'https://dogcatstar.atomcdn.com/2020/07/03/1077797/recommend2.jpg',
+  petName:'QQ',
+  product:'益生菌',
+  share:'臘腸很容易過敏濕疹，嘗試了益生菌搭配生食之後，皮膚眞的越來越好了，天氣潮濕都不會再犯濕疹了！'
+},
+]
+
+export const innerImg = [{
+  img:'https://dogcatstar.atomcdn.com/2020/07/05/1078500/home_point01.png'
+},
+{
+  img:'https://dogcatstar.atomcdn.com/2020/07/05/1078500/home_point02.png',
+  url:'https://www.dogcatstar.com/faq/'
+},
+{
+  img:'https://dogcatstar.atomcdn.com/2020/07/05/1078500/home_point03.png'
+},
+{
+  img:'https://dogcatstar.atomcdn.com/2020/07/05/1078500/home_point04.png',
+  url:'https://line.me/R/ti/p/%40zlo8319e'
+},
+
+]

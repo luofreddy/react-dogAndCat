@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 export const Main_Background_Color = '#543B17'
 export const Main_Text_Color = '#DDD8D1'
-
+export const Inner_Background_Color = '#FFFAF6'
 export const GoToTop=styled.div`
 position: fixed;
 width: 2rem;
@@ -193,4 +193,50 @@ export const HomeCategory=styled.div`
   margin: auto;
   width: 40%;
   padding: 0.3rem 0;
+`
+
+export const UserShareUI = styled.div`
+margin: 1rem;
+text-align: center;
+color:#888;
+  & img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  & .petName{
+    color:#666;
+    font-size: xx-large;
+  }
+  & .product{
+    display: block;
+    padding: 1rem 0;
+  }
+  & .share{
+    display: block;
+  }
+`
+
+export const InnerImg = styled.div`
+  background-color: ${Inner_Background_Color};
+  padding:.8rem 1rem;
+`
+export const DotLine =styled.div`
+  padding: 2rem 1rem;
+  margin:1rem auto;
+  background-position: center;
+  background-image: url('https://dogcatstar.atomcdn.com/images/dot.png');
+  background-repeat: repeat-x;    
+  height: 6px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+  & img{
+    width: auto;
+    height: 300%;
+    transform: translateY(-40%);
+    background-color: #fff;
+    padding: .5rem;
+  }
+    
 `
