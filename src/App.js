@@ -4,24 +4,14 @@ import Home from './container/pages/Home';
 import Login from './container/pages/Login';
 import Fotter from './container/components/Fotter'
 import {AiOutlineUp} from 'react-icons/ai'
-import { useEffect,useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { GoToTop } from './container/UI'
 
 function App() {
   const topDistanceOver150=useRef(false)
   const [isMenuJump,setIsMenuJump] = useState(false)
-  useEffect(()=>{
-    window.addEventListener('scroll',function(e){
-      if(window.scrollY>115)
-      topDistanceOver150.current=true
-      else
-      topDistanceOver150.current=false
-    })
-  })
-  useEffect(()=>{
-
-  })
+  
   const gototop = (e)=>{
     window.scrollTo({
       top: 0,

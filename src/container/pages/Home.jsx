@@ -34,13 +34,14 @@ const Home = ({isMenuJump}) => {
       <img src="https://dogcatstar.atomcdn.com/2020/07/03/955206/title_share-1-1536x190.png" alt="" />
       </HomeCategory>
       <UserShare dataShare={contants.share}></UserShare>
+
       <div style={{padding:1+'rem'}}>
       <img src="https://dogcatstar.atomcdn.com/2020/07/03/955206/sloganA_2-2048x246.png" alt="" />     
       <br/>
       <br/>
-      <div style={{width:90+'%',display:'flex',justifyContent: 'center'}}>
-      <img style={{width:50+'%'}} src="https://dogcatstar.atomcdn.com/2020/07/03/955206/sloganB_01_2.png" alt="" />
-      <img style={{width:50+'%'}}   src="https://dogcatstar.atomcdn.com/2020/07/03/955206/sloganB_02_2.png" alt="" />
+      <div style={{width:90+'%',display:'flex',justifyContent:'space-around',}}>
+      <img style={{width:45+'%'}} src="https://dogcatstar.atomcdn.com/2020/07/03/955206/sloganB_01_2.png" alt="" />
+      <img style={{width:45+'%'}}   src="https://dogcatstar.atomcdn.com/2020/07/03/955206/sloganB_02_2.png" alt="" />
       </div>      
       </div>
       <FourInnerImg InnerImgs={contants.innerImg}></FourInnerImg>

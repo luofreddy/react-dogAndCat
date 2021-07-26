@@ -20,7 +20,7 @@ img{
   border: 1.5px solid #ddd;
   transition: .3s .2s;
   opacity:0;
-  background-color: #543B17;
+  background-color:transparent;
 }
 .swiper-button-next:after, 
 .swiper-button-prev:after {
@@ -57,4 +57,9 @@ img{
   opacity: 1;
   background-color: #fff;
   border-color: #fff;
+}
+
+.scrollY100{
+  transform: translateY(-100%);
+
 }
