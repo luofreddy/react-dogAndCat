@@ -4,13 +4,19 @@ import Home from "./container/pages/Home";
 import Login from "./container/pages/Login";
 import Fotter from "./container/components/Fotter";
 import { AiOutlineUp } from "react-icons/ai";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { GoToTop } from "./container/UI";
 
 function App() {
-  const topDistanceOver150 = useRef(false);
   const [isMenuJump, setIsMenuJump] = useState(false);
+  const [windowWidthWithPC, setWindowWidthWithPC] = useState(
+    document.documentElement.clientWidth > 849
+  );
+  window.addEventListener("resize", () => {
+    if (document.documentElement.clientWidth > 849) setWindowWidthWithPC(true);
+    else setWindowWidthWithPC(false);
+  });
 
   const gototop = (e) => {
     window.scrollTo({
@@ -22,15 +28,20 @@ function App() {
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <Header
-          topDistanceOver150={topDistanceOver150}
           isMenuJump={isMenuJump}
           setIsMenuJump={setIsMenuJump}
+          windowWidthWithPC={windowWidthWithPC}
         ></Header>
         <Switch>
           <Route
             path="/"
             exact
-            component={() => <Home isMenuJump={isMenuJump} />}
+            component={() => (
+              <Home
+                isMenuJump={isMenuJump}
+                windowWidthWithPC={windowWidthWithPC}
+              />
+            )}
           />
           <Route path="/login" component={Login} />
           <Route>404 Not Found!</Route>

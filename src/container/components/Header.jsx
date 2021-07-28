@@ -9,7 +9,7 @@ import Btn from "../global/Btn";
 import Menu from "./Header/Menu";
 import MenuList from "./Header/MenuList";
 
-const Header = ({ topDistanceOver150, isMenuJump, setIsMenuJump }) => {
+const Header = ({ isMenuJump, setIsMenuJump, windowWidthWithPC }) => {
   window.addEventListener("scroll", function (e) {
     const element = document.querySelector(".HeaderStyle");
     if (window.scrollY > 200) {
@@ -28,12 +28,20 @@ const Header = ({ topDistanceOver150, isMenuJump, setIsMenuJump }) => {
         汪喵洗衣酵素，寶寶毛孩吸被被也不怕！
       </Title>
       <HeaderMain>
-        <Menu isMenuJump={isMenuJump} setIsMenuJump={setIsMenuJump}></Menu>
+        {!windowWidthWithPC && (
+          <Menu isMenuJump={isMenuJump} setIsMenuJump={setIsMenuJump}></Menu>
+        )}
         <Link to={"/"}>
-          <h1>
+          <h1 style={{ marginLeft: !windowWidthWithPC ? 0 : "2rem" }}>
             <img src={LOGO_MOBILE} alt="" />
           </h1>
         </Link>
+
+        <MenuList
+          isMenuJump={isMenuJump}
+          setIsMenuJump={setIsMenuJump}
+          windowWidthWithPC={windowWidthWithPC}
+        ></MenuList>
         <div style={{ marginRight: 0.5 + "rem" }}>
           <Link to={"/Login"}>
             <Btn Icon={RiAccountCircleFill}></Btn>
@@ -42,10 +50,6 @@ const Header = ({ topDistanceOver150, isMenuJump, setIsMenuJump }) => {
           <Btn Icon={FaShoppingCart}></Btn>
         </div>
       </HeaderMain>
-      <MenuList
-        isMenuJump={isMenuJump}
-        setIsMenuJump={setIsMenuJump}
-      ></MenuList>
     </div>
   );
 };

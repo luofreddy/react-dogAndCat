@@ -38,6 +38,10 @@ export const Title = styled.div`
   padding: 0.5rem;
   text-align: center;
   font-weight: bold;
+  @media screen and (min-width: 849px) {
+    text-align: left;
+    padding-left: 1rem;
+  }
 `;
 export const HeaderMain = styled.div`
   display: flex;
@@ -102,6 +106,12 @@ export const AllMainProduct = styled.div`
   & :nth-of-type(5) {
     display: none;
   }
+  @media screen and (min-width: 849px) {
+    flex-wrap: nowrap;
+    & :nth-of-type(5) {
+      display: block;
+    }
+  }
 `;
 export const Product = styled.div`
   position: relative;
@@ -155,6 +165,10 @@ export const Product = styled.div`
       }
     }
   }
+  @media screen and (min-width: 849px) {
+    flex: 1 1 auto;
+    margin: 0 1rem;
+  }
 `;
 export const Discount = styled.div`
   content: "特價";
@@ -195,13 +209,22 @@ export const HomeCategory = styled.div`
 `;
 
 export const UserShareUI = styled.div`
+  flex: 1 1 auto;
   margin: 1rem;
   text-align: center;
   color: #888;
-  & img {
-    width: 8rem;
-    height: 8rem;
+  & div {
+    margin: 1rem auto;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
+    overflow: hidden;
+    & img {
+      transition: 0.3s;
+      :hover {
+        transform: scale(1.2);
+      }
+    }
   }
   & .petName {
     color: #666;
@@ -213,6 +236,12 @@ export const UserShareUI = styled.div`
   }
   & .share {
     display: block;
+  }
+  @media screen and (min-width: 849px) {
+    & div {
+      width: 14rem;
+      height: 14rem;
+    }
   }
 `;
 
@@ -238,3 +267,30 @@ export const DotLine = styled.div`
     padding: 0.5rem;
   }
 `;
+export const ThreeTips = styled.div`
+  display: flex;
+  overflow: hidden;
+  & div {
+    flex: 1 1 auto;
+    :hover {
+      transform: scale(1.1);
+    }
+  }
+`;
+
+export const PCMenuMain = styled.nav`
+  display: flex;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  transform: translateX(25%);
+  & ul {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.1s;
+    border-bottom: 2px solid transparent;
+    :hover {
+      border-color: ${Main_Background_Color};
+    }
+  }
+`;
+export const TopTips = styled.div``;

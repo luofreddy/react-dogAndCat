@@ -1,15 +1,19 @@
 import AdSlider from "../global/Slider";
 import * as contants from "../global/contants";
 import MainProduct from "../components/Home/MainProduct";
-import { DotLine, FourIcons, HomeCategory } from "../UI";
+import { DotLine, FourIcons, HomeCategory, ThreeTips } from "../UI";
 import UserShare from "../components/Home/UserShare";
 import FourInnerImg from "../components/Home/FourInnerImg";
 import { v4 } from "uuid";
 
-const Home = ({ isMenuJump }) => {
+const Home = ({ isMenuJump, windowWidthWithPC }) => {
   return (
     <div style={{ position: isMenuJump ? "fixed" : "static" }}>
-      <AdSlider carouselImage={contants.MAIN_AD}></AdSlider>
+      <AdSlider
+        carouselImage={
+          windowWidthWithPC ? contants.AD1_PC : contants.AD1_Mobile
+        }
+      ></AdSlider>
       <FourIcons>
         {contants.fourIcon.map((item) => {
           return (
@@ -21,12 +25,37 @@ const Home = ({ isMenuJump }) => {
       </FourIcons>
       <div>
         <img
-          src="https://dogcatstar.atomcdn.com/2020/07/05/1078468/phone_SliderB_01.jpg"
+          src={
+            windowWidthWithPC
+              ? "https://dogcatstar.atomcdn.com/2020/07/03/955206/sliderB_01_5.jpg"
+              : "https://dogcatstar.atomcdn.com/2020/07/05/1078468/phone_SliderB_01.jpg"
+          }
           alt=""
         />
       </div>
 
-      <AdSlider carouselImage={contants.HOME_CENTER_3TIPS}></AdSlider>
+      {windowWidthWithPC ? (
+        <ThreeTips>
+          {contants.PC_Three_Tips.map((item) => {
+            if (item.url)
+              return (
+                <div key={v4()}>
+                  <a href={item.url}>
+                    <img src={item.img} alt="" />
+                  </a>
+                </div>
+              );
+            else
+              return (
+                <div key={v4()}>
+                  <img src={item.img} alt="" />
+                </div>
+              );
+          })}
+        </ThreeTips>
+      ) : (
+        <AdSlider carouselImage={contants.HOME_CENTER_3TIPS}></AdSlider>
+      )}
 
       <HomeCategory>
         <img
@@ -36,7 +65,11 @@ const Home = ({ isMenuJump }) => {
       </HomeCategory>
 
       <MainProduct mainproduct={contants.MAIN_PRODUCT}></MainProduct>
-      <AdSlider carouselImage={contants.AD_3}></AdSlider>
+      <AdSlider
+        carouselImage={
+          windowWidthWithPC ? contants.AD3_PC : contants.AD3_Mobile
+        }
+      ></AdSlider>
       <HomeCategory>
         <img
           src="https://dogcatstar.atomcdn.com/2020/07/03/955206/title_share-1-1536x190.png"
@@ -56,11 +89,12 @@ const Home = ({ isMenuJump }) => {
           style={{
             width: 90 + "%",
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "center",
+            transform: "translate(5%,0)",
           }}
         >
           <img
-            style={{ width: 45 + "%" }}
+            style={{ width: 45 + "%", paddingRight: "3rem" }}
             src="https://dogcatstar.atomcdn.com/2020/07/03/955206/sloganB_01_2.png"
             alt=""
           />

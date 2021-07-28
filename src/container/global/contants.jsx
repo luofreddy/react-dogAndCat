@@ -1,7 +1,7 @@
 export const LOGO_MOBILE =
   "https://dogcatstar.atomcdn.com/2020/07/03/menu_logo.png";
 
-export const MAIN_AD = [
+export const AD1_Mobile = [
   {
     id: 1,
     url: "https://bit.ly/3qeMQ45",
@@ -158,7 +158,7 @@ export const MAIN_PRODUCT = [
   },
 ];
 
-export const AD_3 = [
+export const AD3_Mobile = [
   {
     id: 1,
     url: "https://www.dogcatstar.com/product/fantasticcat/",
@@ -221,5 +221,64 @@ export const innerImg = [
   {
     img: "https://dogcatstar.atomcdn.com/2020/07/05/1078500/home_point04.png",
     url: "https://line.me/R/ti/p/%40zlo8319e",
+  },
+];
+
+export const AD1_PC = [
+  {
+    id: 1,
+    url: "https://bit.ly/3qeMQ45",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/meowmeowboss_SC.png",
+  },
+  {
+    id: 2,
+    url: "https://www.dogcatstar.com/product/granularcatlitter/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/broken-tofu_SC02-1.png",
+  },
+  {
+    id: 3,
+    url: "https://www.dogcatstar.com/product/laundry/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/laundry_SC02.png",
+  },
+  {
+    id: 4,
+    url: "https://www.dogcatstar.com/product/dog-freshfood-new/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/dogfreshfood_old2_SC01.png",
+  },
+  {
+    id: 5,
+    url: "https://www.dogcatstar.com/product/tofucatlitter/",
+    img: "https://dogcatstar.atomcdn.com/2021/06/09/1244624/tofucatlitter_SC01.png",
+  },
+];
+export const PC_Three_Tips = [
+  {
+    url: "https://www.dogcatstar.com/principle/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/btnB_01_3.png",
+  },
+  {
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/btnB_02_3.png",
+  },
+  {
+    url: "https://www.dogcatstar.com/calculator/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/btnB_03_3.png",
+  },
+];
+
+export const AD3_PC = [
+  {
+    id: 1,
+    url: "https://www.dogcatstar.com/product/fantasticcat/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/web_sliderB02.jpg",
+  },
+  {
+    id: 2,
+    url: "https://www.dogcatstar.com/product/fantasticdog/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/web_sliderB02.jpg",
+  },
+  {
+    id: 3,
+    url: "https://www.dogcatstar.com/product/cathpprawfood/",
+    img: "https://dogcatstar.atomcdn.com/2020/07/03/955206/sliderC_01_2-2048x600.jpg",
   },
 ];
